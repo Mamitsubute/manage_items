@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+      "magicpod-mcp-server": {
+        "command": "/Users/mamiishii/.anyenv/envs/nodenv/shims/node",
+        "args": [
+          "/Users/mamiishii/Documents/magicpod-mcp-server/build/index.js",
+          "--api-token=b8b9eaf4fd23769ae9ea578e5a201823cb7d69ca"
+        ],
+        "env": {
+          "BASE_URL": "https://app.magicpod.com"
+        }
+    }
+  }
+}
