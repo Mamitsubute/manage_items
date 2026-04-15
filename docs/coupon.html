@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クーポン適用 - 商品管理ツール</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>クーポン適用</h1>
+      <a href="index.html" class="nav-link">← 商品管理に戻る</a>
+    </header>
+
+    <div class="coupon-card">
+      <h2>クーポンコードを入力</h2>
+      <div class="coupon-input-row">
+        <input
+          type="text"
+          id="couponInput"
+          placeholder="例：SAVE10"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button class="btn btn-primary" id="applyBtn">適用する</button>
+      </div>
+      <p id="couponMessage" class="coupon-message" aria-live="polite"></p>
+    </div>
+
+    <div class="coupon-card" id="appliedSection" style="display:none;">
+      <h2>適用済みクーポン</h2>
+      <ul id="appliedList" class="applied-list"></ul>
+    </div>
+  </div>
+
+  <script src="coupons.js"></script>
+  <script src="coupon.js"></script>
+</body>
+</html>
